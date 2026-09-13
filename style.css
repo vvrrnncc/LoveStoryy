@@ -1,0 +1,234 @@
+:root {
+    --dark: #000000;
+    --gray: #696871;
+    --red: #971616;
+    --bordo: #811F1F;
+
+}
+html {
+    scroll-padding: 3px ;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.header {
+    padding-block: 30px;
+}
+
+[class*="__container"] {
+    max-width: 1069px;
+    margin-inline: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 49px;
+}
+ul {
+    list-style: none;
+}
+
+.header__list-link {
+   font-weight: 700;
+   font-size: 20px;
+    letter-spacing: -0.47px;
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+.header__list-link.active {
+    color: var(--dark);
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 10px;
+}
+
+.header__list-link:hover{
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__button, .hero__button {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color:white;
+    padding: 19px 59px;
+    background: var(--bordo);
+    border-radius: 10PX;
+    transition: 0.3s;
+}
+
+
+.header__button:hover, .hero__button:hover {
+    opacity: 90%;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+.hero__continer {
+    position: relative;
+}
+
+.hero__content {
+    max-width: 423px;
+    padding-block: 92px;
+    margin-left: 100px;
+}
+
+.hero__image{
+    position: absolute;
+    top: 280px;
+    right: 100px;
+    
+
+}
+.hero__title{
+   font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.5px;
+    line-height: 77px;
+    color: var(--dark);
+}
+
+.hero__desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.63px;
+    line-height: 30px;
+    color: var(--red);
+    margin-top: 30px;
+}
+.hero__buttons {
+    margin-top:50px ;
+    display: flex;
+    gap: 40px;
+}
+.hero__scroll {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid var(--bordo);
+    border-radius: 50%;
+}
+.companies {
+    padding-block: 30px;
+}
+
+.companies__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features {
+    padding-block: 120px;
+}
+.features__container {
+    display: flex;
+    flex-direction: row;
+    gap: 69px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.feature__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 459px;
+}
+.feature__title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.5px;
+    line-height: 60px;
+    color: var(--red);
+}
+.feature__desc {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -2px;
+    line-height: 30px;
+    color: var(--dark);
+}
+.sisiss{
+    padding-block: 120px;
+}
+.sisiss__container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    justify-items: center;
+}
+.sisi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sisi__image {
+    max-width: 200px;
+    height: auto;
+}
+.sisi__title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -2.5px;
+    line-height: 36px;
+    color: var(--red);
+    text-align: center;
+}
+.sisi__desc{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    color: var(--dark);
+    text-align: center;
+}
+.texsts{
+    padding-block: 60px;
+}
+.texsts__container {
+   text-align: center;
+}
+.texsts__title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+    color: var(--red);
+    text-align: center;
+}
